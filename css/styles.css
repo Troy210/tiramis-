@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+
+}
+
+header{
+background-color: lightgoldenrodyellow;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 2;
+border: 2px solid;
+
+}
+
+section{
+    margin: 25px;
+}
+
+nav li{
+    display: inline;
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+section{
+    margin:300px 25px;
+    
+}
+
+.contenedor_limite{
+background-color: lightgray;
+max-width: 700px;
+margin: 0 auto;
+padding: 25px;
+text-align: center;
+border: 5px solid lightblue;
+
+}
+
+h1{
+    color: brown; /* cambiamos el color del titulo */
+    background-color: antiquewhite; /* cambiamos el color del fondo */
+    font-size:100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+ 
+.contenedor_limite_3 {
+    color: palegoldenrod ;
+    background-color: saddlebrown;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    border: 6px solid lightslategrey;
+    
+    }
+
+
+a{
+    text-decoration: none;
+    font-size: none;
+}
+ 
+.contenedor_limite_2{
+margin: 0 auto;
+background-color: aquamarine;
+border:  5px solid ;
+padding: 25px;
+max-width: 1000px;
+
+}
+
+
+
+.padre_parrafo{
+display: flex;
+
+}
+
+.padre{
+background-color: green ;
+display: flex ;
+flex-wrap: wrap ;
+justify-content: space-evenly ;
+
+
+}
+
+.card{
+ background-color: whitesmoke;  
+  max-width : 450px;
+ height: 550px;
+ text-align: center;
+ border: 10px solid burlywood;
+ border-radius: 25px;
+ margin: 10px;
+  padding: 20px;
+  
+ 
+}
+
+.card_centrar{
+    background-color: whitesmoke;  
+    max-width : 700px;
+   height: 550px;
+   text-align: center;
+   border: 10px solid burlywood;
+   border-radius: 25px;
+   margin: 10px;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.card_centrar img{
+width: 100%;
+}
+
+
+.card img{
+width: 100%;
+
+}
+
+p{
+    color: black; /* cambie el color del parrafo */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 30px;
+    font-style: oblique;
+
+
+}
+
+h2{
+    color: green; /* cambiamos el color del titulo 2 */
+    background-color: whitesmoke;  /* cambiamos el color del fondo */
+    text-align: center;
+}
+
+.parrafo_color{
+
+    color: palegoldenrod ; /* cambie el color del parrafo */ 
+    background-color: saddlebrown;/* cambiamos el color del fondo */
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+
+}
+footer{
+    background-color: lightgoldenrodyellow;
+
+}
+
+
+ @media screen and (max-width:700px) {
+   
+    header{
+        flex-direction: column;
+        align-items: start;
+        display: flex;
+        }
+
+    nav li{
+        display: block;
+    }
+ }
+
+
+ /*-----grillas-----*/
+ .parent {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: peru;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
+
+.div1 {
+     grid-area: 1 / 1 / 2 / 3; 
+    }
+
+    .div1 img{
+width: 100%;
+
+    }
+
+
+.div2 {
+     grid-area: 2 / 1 / 3 / 2;
+     }
+
+     .div2 img{
+        width: 100%;
+        
+            }
+
+
+.div3 {
+     grid-area: 2 / 2 / 3 / 3; 
+    }
+
+    .div3 img{
+        width: 100%;
+        
+            }
+
+/*---------------------PSUDOCLASES---------------*/
+
+
+nav li :hover{
+    color: black;
+    background-color: cadetblue;
+    font-size: 20px;
+
+}
+
+.imagen:hover{
+    transform: scale(1.5);
+
+    }
